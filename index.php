@@ -1,26 +1,36 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--  Bootstrap  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <!--  My Custom Styles  -->
-    <link rel="stylesheet" href="css/style.css">
-    <title>MyBlog</title>
-</head>
-<body>
+<?php
+include_once 'template/header.php';
 
-<!--Bootstrap js cdn-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-        crossorigin="anonymous"></script>
+?>
 
-<!--Jquery cdn-->
-<script src="https://code.jquery.com/jquery-3.6.0.slim.js"
-        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
-</body>
-</html>
+    <!--Main Section-->
+    <section>
+        <div class="container">
+            <h3 class="text-center">Welcome to your Blog</h3>
+            <p class="lead text-center mb-5 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi ex in iure
+                obcaecati, quasi rerum sunt? At rem tenetur voluptatum?</p>
+        </div>
+    </section>
+
+    <!--Blogs-->
+    <section>
+        <div class="container">
+            <h4 class="text-center">Some Basics Blogs</h4>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12 my-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">First Blog</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque error
+                                fugiat harum iure nemo nihil nisi nobis quis quos sunt?</p>
+                            <a href="blog_details.php" class="btn btn-primary">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+<?php include_once 'template/footer.php' ?>
