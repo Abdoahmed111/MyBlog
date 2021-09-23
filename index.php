@@ -7,6 +7,11 @@ include_once 'template/header.php';
     <section>
         <div class="container">
             <h3 class="text-center">Welcome to your Blog</h3>
+            <?php
+            if (isset($_SESSION['usersUid'])) {
+                echo "<h4 class='text-center' >" . $_SESSION['usersUid'] . "</h4>";
+            }
+            ?>
             <p class="lead text-center mb-5 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi ex in iure
                 obcaecati, quasi rerum sunt? At rem tenetur voluptatum?</p>
         </div>

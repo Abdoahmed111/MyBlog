@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -25,14 +29,17 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="add_blog.php">Add Blog</a>
+                        <a class="nav-link" href="index.php">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="sign_up.php">Sign Up</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="sign_in.php">Sign In</a>
-                    </li>
+                    <?php
+                    if (isset($_SESSION['usersUid'])) {
+                        echo "<li class='nav-item'><a class='nav-link' href='add_blog.php'>Add Blog</a></li>";
+                        echo "<li class='nav-item'><a class='nav-link' href='includes/logout.inc.php'>Logout</a></li>";
+                    } else {
+                        echo "<li class='nav-item'><a class='nav-link' href='sign_up.php'>Sign Up</a></li>";
+                        echo "<li class='nav-item'><a class='nav-link' href='sign_in.php'>Sign In</a></li>";
+                    }
+                    ?>
                 </ul>
             </div>
         </div>
