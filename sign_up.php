@@ -30,7 +30,7 @@ include 'template/header.php';
                                name="confirm_password">
 
                     </div>
-                    <button type="submit" name="submit" class="btn btn-danger">Sign Up</button>
+                    <button type="submit" name="submit" class="btn btn-primary">Sign Up</button>
                 </form>
                 <div class="d-flex justify-content-center align-item-center">
                     <?php
